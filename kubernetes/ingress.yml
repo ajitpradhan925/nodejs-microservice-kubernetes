@@ -6,13 +6,29 @@ metadata:
     name: nodejs-microservice
 spec:
   rules:
-  - host: localhost
+  - host: example.com
     http:
       paths:
       - pathType: Prefix
-        path: "/"
+        path: "/customer"
         backend:
           service:
-            name: <Service>
+            name: customer
             port: 
-              number: <Port>
+              number: 80
+
+      - pathType: Prefix
+        path: "/product"
+        backend:
+          service:
+            name: product
+            port: 
+              number: 80
+
+      - pathType: Prefix
+        path: "/order"
+        backend:
+          service:
+            name: order
+            port: 
+              number: 80
