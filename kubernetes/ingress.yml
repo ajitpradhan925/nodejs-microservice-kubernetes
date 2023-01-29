@@ -4,9 +4,11 @@ metadata:
   name: nodejs-microservice
   labels:
     name: nodejs-microservice
+  annotations:
+    kubernetes.io/ingress.class: nginx
 spec:
   rules:
-  - host: example.com
+  - host: nodejs-ecommerce.com
     http:
       paths:
       - pathType: Prefix

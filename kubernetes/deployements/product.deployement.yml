@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: product
-        image: nodejs/product
+        image: "84550/nodejs-microservice:product-v1"
         resources:
           limits:
             memory: "128Mi"

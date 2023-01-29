@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: customer
-        image: nodejs/customer
+        image: 84550/nodejs-microservice:customer-v1
         resources:
           limits:
             memory: "128Mi"
